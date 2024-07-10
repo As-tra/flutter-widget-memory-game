@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "750320766932",
+    "project_id": "flutter-widgets-game",
+    "storage_bucket": "flutter-widgets-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750320766932:android:75ab0f62f9138c89ad1041",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC33rHVrgGGcv3fCsAtNxtkr_4nA_H1iK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

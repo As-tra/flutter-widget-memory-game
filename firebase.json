@@ -1,0 +1,39 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "flutter-widgets-game",
+          "appId": "1:750320766932:android:75ab0f62f9138c89ad1041",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "flutter-widgets-game",
+          "configurations": {
+            "android": "1:750320766932:android:75ab0f62f9138c89ad1041",
+            "ios": "1:750320766932:ios:4d641e71d66a4ac6ad1041",
+            "macos": "1:750320766932:ios:4d641e71d66a4ac6ad1041",
+            "web": "1:750320766932:web:f9e893d7f582fbfbad1041",
+            "windows": "1:750320766932:web:bedc632c10270151ad1041"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
