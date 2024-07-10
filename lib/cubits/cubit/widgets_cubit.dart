@@ -232,6 +232,7 @@ class WidgetsCubit extends Cubit<WidgetsState> {
   List<String> guessedWidgets = [];
 
   void addWidget({required String value}) {
+    guessedWidgets.add(value);
     if (widgetsNames.contains(value)) {
       widgetsNames.remove(value);
       guessedWidgets.add(value);

@@ -35,7 +35,6 @@ class HomeViewBody extends StatelessWidget {
           height: 15,
         ),
         WidgetListView(),
-        Spacer(),
         CreditWidget(),
       ],
     );
