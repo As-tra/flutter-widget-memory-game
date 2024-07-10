@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
 
-class TitleTextWidget extends StatelessWidget {
-  const TitleTextWidget({
+class CustomTextWidget extends StatelessWidget {
+  final String text;
+  final double size;
+  const CustomTextWidget({
     super.key,
+    required this.text,
+    required this.size,
   });
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return  Wrap(
       children: [
         Text(
-          'Flutter Memory Widgets Game 🤍',
+         text,
+          textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.white,
-            fontSize: 32,
+            fontSize: size,
             fontWeight: FontWeight.bold,
           ),
         ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widgets_memory_test/widgets/credit_widget.dart';
 import 'package:flutter_widgets_memory_test/widgets/custom_text_count.dart';
 import 'package:flutter_widgets_memory_test/widgets/custom_text_field.dart';
-import 'package:flutter_widgets_memory_test/widgets/title_text_widget.dart';
+import 'package:flutter_widgets_memory_test/widgets/custom_text_widget.dart';
 import 'package:flutter_widgets_memory_test/widgets/widgets_list_view.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -15,16 +15,16 @@ class HomeViewBody extends StatelessWidget {
         SizedBox(
           height: 50,
         ),
-        TitleTextWidget(),
+        CustomTextWidget(
+          text: 'Flutter Memory Widgets Game 🤍',
+          size: 32,
+        ),
         SizedBox(
           height: 25,
         ),
-        Text(
-          'How many Flutter widgets you could remember ?',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 22,
-          ),
+        CustomTextWidget(
+          text: 'How many Flutter widgets you could remember ?',
+          size: 22,
         ),
         CustomCountText(),
         SizedBox(
