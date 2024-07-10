@@ -20,10 +20,7 @@ class CustomButton extends StatelessWidget {
         controller.clear();
       },
       child: Container(
-        padding: const EdgeInsets.symmetric(
-          vertical: 10,
-          horizontal: 12,
-        ),
+        padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
           color: kSecondayColor,
           borderRadius: BorderRadius.circular(10),

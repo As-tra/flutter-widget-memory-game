@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_widgets_memory_test/constants.dart';
 import 'package:flutter_widgets_memory_test/cubits/cubit/widgets_cubit.dart';
+import 'package:flutter_widgets_memory_test/utils/get_width.dart';
 import 'package:flutter_widgets_memory_test/widgets/custom_button.dart';
 
 class CustomTextField extends StatefulWidget {
@@ -26,7 +27,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.of(context).size.width * .6,
+      width: getWidth(context),
       child: Row(
         children: [
           Expanded(
@@ -61,4 +62,6 @@ class _CustomTextFieldState extends State<CustomTextField> {
       ),
     );
   }
+
+  
 }
